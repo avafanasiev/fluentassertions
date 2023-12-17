@@ -2,6 +2,7 @@ version: "1.0"
 
 ide: QDNET
 failThreshold: 20
+bootstrap:  apt-get update && apt-get install lsof && (lsof -r 1 /data/project/profile.yaml &)
 
 profile:
   path: profile.yaml
